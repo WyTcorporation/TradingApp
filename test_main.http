@@ -1,0 +1,41 @@
+# Test your FastAPI endpoints
+
+# DOCS (generated swager API docs)
+GET http://127.0.0.1:8000/docs
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Content-Type: text/html; charset="utf-8"
+
+###
+
+# DOCS (Alternative API docs)
+GET http://127.0.0.1:8000/redoc
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Content-Type: text/html; charset="utf-8"
+
+###
+
+# API START
+GET http://127.0.0.1:8000/
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/hello/User
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/users/1
+Accept: application/json
+
+###
+
+PUT http://127.0.0.1:8000/users/1?name=Vlad&role=superadmin
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8000/trades
+Accept: application/json
+
+###
